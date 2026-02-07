@@ -66,5 +66,6 @@ public class Character {
 }
 ```
 ## UML DIAGRAM
-<img width="1271" height="521" alt="exported_from_idea drawio" src="https://github.com/user-attachments/assets/5e03fa89-1555-42ed-987f-6bf532e2d034" />
+![exported_from_idea](https://github.com/user-attachments/assets/d9aa6af2-9a7c-4625-994b-202c56361c36)
+
 
