@@ -9,7 +9,7 @@ public class GameDemo {
                 Arrays.asList(new CreateMagic()));
 
         Character archer = new Character("Archer", new ShootArrow(),
-                Arrays.asList(new Shield()));
+                Arrays.asList(new Dodge()));
 
         System.out.println("--- Knight Actions ---");
         knight.attack();
