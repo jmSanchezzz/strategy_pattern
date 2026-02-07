@@ -1,66 +1,40 @@
-🕹️ Strategy Pattern – GameApp Problem Scenario
-📌 Problem Scenario
+# Strategy Pattern – GameApp Problem Scenario
+
+##  Problem Scenario
 
 Suppose we have three types of characters in a GameApp:
 
-Character Types
-1. Knight
+## Character Types
 
-Attacks with a sword
+**Knight** – Attacks with a sword; uses 3 strategies to defend (shield, dodge, magic barrier)
 
-Uses three defense strategies:
+**Wizard** – Casts spells; uses magic barrier to defend
 
-Shield
+**Archer** – Shoots arrows; uses dodge to to defend
 
-Dodge
+## Required Design Pattern
 
-Magic Barrier
+Implement two types of Strategy:
 
-2. Wizard
+### A. DefenseStrategy
 
-Casts spells
+- Shield
+- Dodge
+- CreateMagic
 
-Uses magic barrier to defend
+### B. AttackStrategy
 
-3. Archer
+- CastSpell
+- ShootArrow
+- SwingSword
 
-Shoots arrows
+## Task Requirement
 
-Uses dodge to defend
+Refactor the existing codes and provide the UML Diagram:
 
-🎯 Required Design Pattern
+## Existing Code
 
-Implement the Strategy Pattern using two types of strategies:
-
-A. DefenseStrategy
-
-Shield
-
-Dodge
-
-CreateMagic
-
-B. AttackStrategy
-
-CastSpell
-
-ShootArrow
-
-SwingSword
-
-🔧 Task Requirements
-
-Refactor the existing code to apply the Strategy Pattern
-
-Remove conditional (if–else) logic
-
-Encapsulate attack and defense behaviors into separate strategy classes
-
-Allow behaviors to vary independently from the character
-
-Provide the UML Diagram of the refactored design
-
-🧩 Existing Code (To Be Refactored)
+```java
 public class Character {
     private String type;
 
@@ -81,7 +55,7 @@ public class Character {
     public void defend() {
         if (type.equals("Knight")) {
             System.out.println("Using a shield to defend!");
-            System.out.println("Dodging to avoid attack!");
+            System.out.println("Dodgin to avoid attack!");
             System.out.println("Creating a magic barrier for defense!");
         } else if (type.equals("Wizard")) {
             System.out.println("Creating a magic barrier for defense!");
@@ -90,3 +64,6 @@ public class Character {
         }
     }
 }
+
+## UML Diagram
+<img width="1271" height="521" alt="exported_from_idea drawio" src="https://github.com/user-attachments/assets/14d5676b-af48-4d2c-b8fc-a9c46574e3c1" />
