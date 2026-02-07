@@ -1,6 +1,6 @@
 # Strategy Pattern – GameApp Problem Scenario
 
-##  Problem Scenario
+## Problem Scenario
 
 Suppose we have three types of characters in a GameApp:
 
@@ -64,6 +64,7 @@ public class Character {
         }
     }
 }
+```
+## UML DIAGRAM
+<img width="1271" height="521" alt="exported_from_idea drawio" src="https://github.com/user-attachments/assets/5e03fa89-1555-42ed-987f-6bf532e2d034" />
 
-## UML Diagram
-<img width="1271" height="521" alt="exported_from_idea drawio" src="https://github.com/user-attachments/assets/14d5676b-af48-4d2c-b8fc-a9c46574e3c1" />
